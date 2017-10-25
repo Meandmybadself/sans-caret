@@ -5,11 +5,11 @@ This uses yarn.lock to disambiguate tildes & carets in package.json files.
 
 ## Installation
 Dirty up that global node space with:
-`npm install caret-bare -g`
+`npm install sans-caret -g`
 
 ## Usage
 Navigate to your project & execute
-`caret-bare`
+`sans-caret`
 
 After you're done, nuke out _node_modules_ and reinstall.
 
