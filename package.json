@@ -1,6 +1,6 @@
 {
   "name": "sans-caret",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Uses yarn.lock to disambiguate tilde & caret versions in package.json files.",
   "main": "index.js",
   "author": "jeffery@permanentrecord.io",

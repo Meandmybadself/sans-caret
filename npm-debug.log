@@ -1,0 +1,108 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/jefferybennett/.nvm/versions/node/v5.11.1/bin/node',
+1 verbose cli   '/Users/jefferybennett/.nvm/versions/node/v5.11.1/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v5.11.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/jefferybennett/Sites/sans-caret',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/jefferybennett/.npm/sans-caret/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/jefferybennett/.npm correctMkdir not in flight; initializing
+10 info lifecycle sans-caret@1.0.0~prepublish: sans-caret@1.0.0
+11 silly lifecycle sans-caret@1.0.0~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/jefferybennett/.npm/sans-caret/1.0.0/package.tgz',
+12 verbose tar pack   '/Users/jefferybennett/Sites/sans-caret' ]
+13 verbose tarball /Users/jefferybennett/.npm/sans-caret/1.0.0/package.tgz
+14 verbose folder /Users/jefferybennett/Sites/sans-caret
+15 verbose addLocalTarball adding from inside cache /Users/jefferybennett/.npm/sans-caret/1.0.0/package.tgz
+16 verbose correctMkdir /Users/jefferybennett/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd sans-caret@1.0.0
+18 verbose afterAdd /Users/jefferybennett/.npm/sans-caret/1.0.0/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/jefferybennett/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/jefferybennett/.npm/sans-caret/1.0.0/package/package.json written
+21 silly publish { name: 'sans-caret',
+21 silly publish   version: '1.0.0',
+21 silly publish   description: 'Uses yarn.lock to disambiguate tilde & caret versions in package.json files.',
+21 silly publish   main: 'index.js',
+21 silly publish   author: { name: 'jeffery@permanentrecord.io' },
+21 silly publish   license: 'MIT',
+21 silly publish   homepage: 'https://github.com/meandmybadself/sans-caret',
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/meandmybadself/sans-caret.git' },
+21 silly publish   bugs: { url: 'https://github.com/meandmybadself/sans-caret/issues' },
+21 silly publish   dependencies: { '@yarnpkg/lockfile': '1.0.0' },
+21 silly publish   bin: { 'sans-caret': './index.js' },
+21 silly publish   readme: '# Sans Caret\n\n## Overview\nThis uses yarn.lock to disambiguate tildes & carets in package.json files.\n\n## Installation\nDirty up that global node space with:\n`npm install caret-bare -g`\n\n## Usage\nNavigate to your project & execute\n`caret-bare`\n\nAfter you\'re done, nuke out _node_modules_ and reinstall.\n\n## To Note\nThis package.json contains no carets.\n\n## Todos\nI\'m sure there are edge cases that won\'t be covered by this that require human intervention. Open to options on how to best handle those.\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '1a21ab531964c3a659de42a490c9591858657526',
+21 silly publish   _id: 'sans-caret@1.0.0',
+21 silly publish   scripts: {},
+21 silly publish   _shasum: '471a7a76b01f186acede9b387e855af2acba533a',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name sans-caret
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry data Result {
+26 silly mapToRegistry   raw: 'sans-caret',
+26 silly mapToRegistry   scope: null,
+26 silly mapToRegistry   name: 'sans-caret',
+26 silly mapToRegistry   rawSpec: '',
+26 silly mapToRegistry   spec: 'latest',
+26 silly mapToRegistry   type: 'tag' }
+27 silly mapToRegistry uri https://registry.npmjs.org/sans-caret
+28 verbose publish registryBase https://registry.npmjs.org/
+29 silly publish uploading /Users/jefferybennett/.npm/sans-caret/1.0.0/package.tgz
+30 verbose request uri https://registry.npmjs.org/sans-caret
+31 verbose request sending authorization for write operation
+32 info attempt registry request try #1 at 3:13:26 PM
+33 verbose request using bearer token for auth
+34 verbose request id 84565a5f129fffed
+35 http request PUT https://registry.npmjs.org/sans-caret
+36 http 403 https://registry.npmjs.org/sans-caret
+37 verbose headers { 'content-type': 'application/json',
+37 verbose headers   'cache-control': 'max-age=300',
+37 verbose headers   'content-length': '91',
+37 verbose headers   'accept-ranges': 'bytes',
+37 verbose headers   date: 'Wed, 25 Oct 2017 20:13:27 GMT',
+37 verbose headers   via: '1.1 varnish',
+37 verbose headers   connection: 'keep-alive',
+37 verbose headers   'x-served-by': 'cache-mdw17349-MDW',
+37 verbose headers   'x-cache': 'MISS',
+37 verbose headers   'x-cache-hits': '0',
+37 verbose headers   'x-timer': 'S1508962407.598642,VS0,VE557',
+37 verbose headers   vary: 'Accept-Encoding, Accept' }
+38 verbose request invalidating /Users/jefferybennett/.npm/registry.npmjs.org/sans-caret on PUT
+39 error publish Failed PUT 403
+40 verbose stack Error: You cannot publish over the previously published version 1.0.0. : sans-caret
+40 verbose stack     at makeError (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+40 verbose stack     at CachingRegistryClient.<anonymous> (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+40 verbose stack     at Request._callback (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+40 verbose stack     at Request.self.callback (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/request/request.js:199:22)
+40 verbose stack     at emitTwo (events.js:100:13)
+40 verbose stack     at Request.emit (events.js:185:7)
+40 verbose stack     at Request.<anonymous> (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+40 verbose stack     at emitOne (events.js:95:20)
+40 verbose stack     at Request.emit (events.js:182:7)
+40 verbose stack     at IncomingMessage.<anonymous> (/Users/jefferybennett/.nvm/versions/node/v5.11.1/lib/node_modules/npm/node_modules/request/request.js:963:12)
+41 verbose statusCode 403
+42 verbose pkgid sans-caret
+43 verbose cwd /Users/jefferybennett/Sites/sans-caret
+44 error Darwin 16.7.0
+45 error argv "/Users/jefferybennett/.nvm/versions/node/v5.11.1/bin/node" "/Users/jefferybennett/.nvm/versions/node/v5.11.1/bin/npm" "publish"
+46 error node v5.11.1
+47 error npm  v3.8.6
+48 error code E403
+49 error You cannot publish over the previously published version 1.0.0. : sans-caret
+50 error If you need help, you may report this error at:
+50 error     <https://github.com/npm/npm/issues>
+51 verbose exit [ 1, true ]
